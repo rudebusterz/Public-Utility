@@ -1,0 +1,133 @@
+@font-face {
+	font-family: " SM3신신명조-03";
+	src: url("font/ SM3신신명조-03.otf") format("opentype"),
+}
+
+body {
+	background: #FFF617;
+}
+
+.scroll {
+	overflow: hidden;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	position: absolute;
+  width: 1280px;
+  height: 800px;
+  background: #FFF617;
+}
+
+h1 {
+	color: ghostwhite;
+	font-size: 70px;
+	font-family: Georgia, serif;
+	margin-top: 60px;
+	text-align: center;
+	filter: blur(2px);
+}
+
+#ellipse {
+  position: absolute;
+  width: 778px;
+  height: 772px;
+  left: 251px;
+  top: 14px;
+  background: radial-gradient(50% 50% at 50% 50%, #23F700 51.04%, #FFF617 96.88%, #FFF617 100%);
+}
+
+#bell {
+  position: absolute;
+  width: 628px;
+  height: 1544px;
+  left: 326px;
+  top: 94px;
+}
+
+.image-clip {
+	position: absolute;
+	clip: rect(0, 712px, 841px, 0);
+}
+
+.bell.vibration {
+	animation: vibration .1s infinite;
+}
+
+@keyframes vibration {
+  from {
+    transform: rotate(2deg);
+    transform-origin: center center;
+  }
+  to {
+    transform: rotate(-2deg);
+    transform-origin: center center;
+  }
+}
+/*question --- transform-origin doesn't work*/
+
+#title-01 {
+	position: absolute;
+  width: 330px;
+  height: 330px;
+  left: 36px;
+  top: 10px;
+}
+
+#title-02 {
+	position: absolute;
+  width: 330px;
+  height: 330px;
+  left: 913px;
+  top: 10px;
+}
+
+#explanation {
+	position: absolute;
+	height: 120px;
+	top: 610px;
+	left: 50px;
+	font-size: 23px;
+	font-family: SM3신신명조-03;
+	line-height: 30px;
+}
+
+.HL {
+	background-color: white;
+	color: red;
+}
+
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
