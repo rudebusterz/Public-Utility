@@ -1,0 +1,137 @@
+@font-face {
+  font-family: " SM3신신명조-03";
+  src: url("font/ SM3신신명조-03.otf") format("opentype"),
+}
+
+body {
+  background: #FFF617;
+}
+
+.scroll {
+  overflow: hidden;
+}
+
+#align {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  height: 100vh;
+}
+
+#stage {
+  position: absolute;
+  width: 1280px;
+  height: 800px;
+  background: #FFF617;
+  z-index: 0;
+}
+
+.container{
+  /* set to height and width of window */
+  width: 400px;
+  height: 300px;
+  /* use flexbox to center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  transform: translate(440px,250px);
+  transform-origin: center center;
+}
+
+h1 {
+  color: ghostwhite;
+  font-size: 35px;
+  font-family: SM3신신명조-03;
+  text-align: center;
+  word-break: keep-all;
+}
+
+#ellipse {
+  position: absolute;
+  width: 778px;
+  height: 772px;
+  left: 251px;
+  top: 14px;
+  background: radial-gradient(50% 50% at 50% 50%, #23F700 51.04%, #FFF617 96.88%, #FFF617 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+#answer-01 {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  left: 36px;
+  top: 10px;
+  z-index: 2;
+}
+
+#answer-02 {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  left: 913px;
+  top: 10px;
+  z-index: 3;
+}
+
+.HL {
+  background-color: #FF27E9;
+  color: white;
+}
+
+.button {
+  position: absolute;
+  height: 100px;
+  top: 700px;
+  left: 590px;
+  z-index: 1000000;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button02 {
+  position: absolute;
+  height: 90px;
+  top: 355px;
+  left: 540px;
+  z-index: 900000;
+
+}
+
+.button02:hover {
+  cursor: pointer;
+}
+
+
+/* animations */
+
+/*
+#clip:hover {
+  transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
